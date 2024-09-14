@@ -10,9 +10,11 @@ export default function Companies() {
   ];
 
   return (
-    <div>
-      <h1>Companies Attending the Event</h1>
-      <Dropdown companyName={companyName} companyLinks={companyLinks} />
+    <div className="flex items-center justify-center min-h-screen">
+      <div className="text-center">
+        <h1 className="text-2xl font-bold mb-4">Companies Attending the Event</h1>
+        <Dropdown companyName={companyName} companyLinks={companyLinks} />
+      </div>
     </div>
   );
 }

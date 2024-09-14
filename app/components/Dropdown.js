@@ -1,4 +1,4 @@
-'use client'; // Mark this as a Client Component
+'use client';
 
 import { useState } from 'react';
 import Link from 'next/link';
@@ -36,8 +36,8 @@ export default function Dropdown({ companyName, companyLinks }) {
         <div className="absolute right-0 w-48 mt-2 origin-top-right bg-white border border-gray-300 rounded-md shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="py-1">
             {companyLinks.map((link) => (
-              <Link key={link.name} href={link.url}>
-                <a className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">{link.name}</a>
+              <Link key={link.name} href={link.url} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                {link.name}
               </Link>
             ))}
           </div>
