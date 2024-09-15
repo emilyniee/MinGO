@@ -28,7 +28,8 @@ export function Users({ profilePic, initials }) {
             )}
           </div>
           <span className="ml-6 text-5xl font-bold text-black">{initials}</span>
-          <MicIcon className="ml-6 text-5xl font-bold text-black"/>
+          {/* <MicIcon className="ml-6 text-5xl font-bold text-black"/> */}
+          <MicButton className="text-black"/>
         </div>
       </div>
     </div>
@@ -61,10 +62,10 @@ export function UserMingo({ profilePic, initials, paragraphText, date }) {
           </div>
           <div className="relative left-[25px] ml-6 flex flex-col justify-between h-[90px]">
             <span className="text-6xl font-bold text-black">{initials}</span>
-            <span className="text-xl font-bold text-black">06/17/56</span>
+            <span className="text-xl font-bold text-black">"06/17/56</span>
           </div>
         </div>
-        <div className="pt-[140px] px-[30px] overflow-y-scroll">
+        <div className="pt-[140px] pb-[140px] px-[30px] overflow-y-scroll">
           <p className="text-base text-black">{paragraphText}</p>
         </div>
       </div>

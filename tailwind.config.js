@@ -14,6 +14,16 @@ module.exports = {
         green: "#ffcc73",
         orange:"#FCC179"
       },
+      keyframes: {
+        glow: {
+          '0%': { boxShadow: '0 0 5px rgba(255, 0, 0, 0.5)' },
+          '50%': { boxShadow: '0 0 15px rgba(255, 0, 0, 0.75)' },
+          '100%': { boxShadow: '0 0 5px rgba(255, 0, 0, 0.5)' },
+        },
+      },
+      animation: {
+        glow: 'glow 1.5s infinite alternate',
+      },
     },
   },
   plugins: [],

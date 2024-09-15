@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import pfp from '../app/images/pfp.jpeg';
 import Navbar from './components/navbar.js';
-import Companies from "./companies/page";
-import UserPg from "./users/page";
-import FriendsPg from "./friends/page";
+import MicButton from './components/micButton';
 
 export default function Home() {
   return (
