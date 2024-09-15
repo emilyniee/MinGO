@@ -49,10 +49,10 @@ const events = [
 
 export default function EventsPage() {
   return (
-    <div className="h-screen flex items-center justify-center bg-lightGreen p-8">
-      <div className="w-full max-w-6xl">
+    <div className="h-screen flex items-center justify-center bg-green p-8">
+      <div className="w-full max-w-6xl pt-2">
         <Typography variant="h4" color="text.primary" align="center" gutterBottom>
-          Upcoming Events
+          UPCOMING EVENTS
         </Typography>
         {/* Scrollable Container */}
         <div className="grid gap-4 overflow-y-scroll max-h-[75vh] p-4 bg-white rounded-lg shadow-md">

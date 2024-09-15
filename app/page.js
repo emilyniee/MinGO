@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -6,13 +6,22 @@ import Script from 'next/script'; // Import Script component from Next.js
 import pfp from '../app/images/pfp.jpeg';
 import Navbar from './components/navbar.js';
 import mango from '../app/images/mango.png';
+import bg from '../app/images/bg.png'; // Import the background image
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center bg-green text-black p-16 min-h-screen" >
+    <div
+      className="flex flex-col items-center justify-center text-black p-16 min-h-screen"
+      style={{
+        backgroundImage: `url(${bg.src})`, // Set the imported image as the background
+        backgroundSize: 'cover',           // Make the background cover the entire div
+        backgroundPosition: 'center',      // Center the background image
+        backgroundRepeat: 'no-repeat',     // Prevent the background from repeating
+      }}
+    >
       <div className="flex-grow grid grid-rows-3 grid-flow-col gap-4 w-3/4 mt-8">
         <div className="row-span-4 bg-lightGreen p-8 rounded-lg text-center shadow-md flex flex-col justify-center items-center text-xl">
-          <h1 className="">PROFILE</h1>
+          <h1 className="bg-green px-2 rounded-lg">PROFILE</h1>
           <Image 
             src={pfp}
             alt="Profile Picture"

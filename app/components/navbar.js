@@ -7,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex flex-col items-center justify-center bg-green text-black fixed w-full">
+    <nav className="flex flex-col items-center justify-center  text-black fixed w-full">
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -37,7 +37,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-white text-2xl font-bold">
+            <h1 className="text-white text-2xl font-bold px-1 rounded-lg">
               <Link href="/">MinGO</Link>
             </h1>
           </div>
@@ -45,10 +45,10 @@ export default function Navbar() {
           {/* Links */}
           <div className="hidden sm:block sm:ml-6">
             <div className="flex space-x-4">
-              <Link href="/events" className="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-green-600">
+              <Link href="/events" className="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-orange-600">
                 Events
               </Link>
-              <Link href="/mingos" className="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-green-600">
+              <Link href="/mingos" className="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-orange-600">
                 My Mingos
               </Link>
             </div>
