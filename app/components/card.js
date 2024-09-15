@@ -50,12 +50,34 @@ export function UserMingo({ profilePic, name, paragraphText, date }) {
         <h1 className="text-xl font-bold text-black">{date}</h1>
       </div>
 
-
       <div class="col-span-3 ...">
         <h1 className="text-black font-bold">About:</h1>
         <h4 className="text-black">{paragraphText}</h4>
       </div>
      
     </div>
+  );
+}
+
+export function EventCard({ companyLogo, companyName, date, time, location }) {
+  return (
+    <Card sx={{ maxWidth: 345, mb: 2 }}>
+      <CardContent>
+      <Image
+          src={companyLogo}
+          alt="Company Logo"
+          className=""
+          width="20"
+          height="20"
+        />
+        <Typography variant="h5" component="div" sx={{ mt: 2 }}>
+          {companyName}
+        </Typography>
+        <Chip label={company} sx={{ mt: 1, mb: 1 }} />
+        <Typography variant="body2" color="text.secondary">
+          {location}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
