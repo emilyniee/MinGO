@@ -1,7 +1,11 @@
+"use client"
+
 import Link from 'next/link';
 import Image from 'next/image';
+import Script from 'next/script'; // Import Script component from Next.js
 import pfp from '../app/images/pfp.jpeg';
 import Navbar from './components/navbar.js';
+import mango from '../app/images/mango.png';
 
 export default function Home() {
   return (
@@ -48,7 +52,29 @@ export default function Home() {
             </button> 
           </Link>
         </div>
+
+        {/* Mango Icon */}
+        <div className="fixed bottom-4 right-4">
+          <Image 
+            src={mango}
+            alt="Bottom Right Icon"
+            width={200}
+            height={230}
+          />
+        </div>
       </div>
+
+      <Script
+        src="https://cdn.voiceflow.com/widget/bundle.mjs"
+        type="text/javascript"
+        onLoad={() => {
+          window.voiceflow.chat.load({
+            verify: { projectID: '66e6888f92f43d1a8236d5aa' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }}
+      />
     </div>
   );
 }
