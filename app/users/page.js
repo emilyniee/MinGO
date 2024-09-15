@@ -12,10 +12,6 @@ export default function UserPg() {
     setUsers(users_data);
   }, []);
 
-  // Filter users where `talkedTo` is `true`
-  Users.foreach((a) => {
-    console.log(a);
-  })
 
   const filteredUsers = users.filter(user => user.talkedTo);
   console.log(filteredUsers);
