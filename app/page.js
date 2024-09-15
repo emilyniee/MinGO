@@ -7,8 +7,6 @@ import MicButton from './components/micButton';
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center bg-green text-black p-16 min-h-screen" >
-      <Navbar />
-      
       <div className="flex-grow grid grid-rows-3 grid-flow-col gap-4 w-3/4 mt-8">
         <div className="row-span-4 bg-lightGreen p-8 rounded-lg text-center shadow-md flex flex-col justify-center items-center text-xl">
           <h1 className="">PROFILE</h1>
@@ -40,12 +38,12 @@ export default function Home() {
 
         {/* Events Buttons */}
         <div className="row-span-2 col-span-2 space-x-2 text-xl">
-          <Link href="/sponsors">
+          <Link href="/events">
             <button className="text-black py-3 px-6 rounded-lg text-orange-700 text-lg hover:bg-yellow-600 transition duration-300 bg-lightGreen shadow-md">
               Explore events
             </button> 
           </Link>
-          <Link href="/sponsors">
+          <Link href="/mingos">
             <button className="text-black py-3 px-6 rounded-lg text-orange-700 text-lg hover:bg-yellow-600 transition duration-300 bg-lightGreen shadow-md">
               View your mingos
             </button> 

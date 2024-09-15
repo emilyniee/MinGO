@@ -25,7 +25,7 @@ const MapPage = () => {
 
   return (
     <div
-      className="flex items-start justify-between min-h-screen bg-orange p-8"
+      className="flex items-start justify-between min-h-screen bg-green p-8"
       style={{ height: "100vh" }}
     >
       {/* Left Section: Dropdown for rooms and additional features */}
