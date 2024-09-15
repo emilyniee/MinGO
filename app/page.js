@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import pfp from '../app/images/pfp.jpeg';
 import Navbar from './components/navbar.js';
+import Companies from "./companies/page";
 
 export default function Home() {
   return (
