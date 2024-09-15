@@ -9,7 +9,8 @@
     "about": "",
     "linkedin": "N/A",
     "currRoom": "Strawberry",
-    "match": "N/A"
+    "match": false,
+    "points": 0
   },
   {
     "name": "Alice Johnson",
@@ -21,7 +22,8 @@
     "about": "Alice is a software engineer specializing in frontend technologies. She's passionate about UI/UX design and accessibility.",
     "linkedin": "https://www.linkedin.com/in/alicejohnson",
     "currRoom": "Strawberry",
-    "match": "N/A"
+    "match": true,
+    "points": 0
   },
   {
     "name": "Bob Smith",
@@ -33,7 +35,7 @@
     "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
     "linkedin": "https://www.linkedin.com/in/bobsmith",
     "currRoom": "Strawberry",
-    "match": "False",
+    "match": false,
     "points": 250
   },
   {
@@ -46,7 +48,7 @@
     "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
     "linkedin": "https://www.linkedin.com/in/charlielee",
     "currRoom": "Kiwi",
-    "match": "False",
+    "match": false,
     "points": 550
   },
   {
@@ -59,7 +61,7 @@
     "about": "Dana is a cybersecurity expert focused on building secure applications and ensuring data protection for organizations.",
     "linkedin": "https://www.linkedin.com/in/danawilliams",
     "currRoom": "Blueberry",
-    "match": "True",
+    "match": true,
     "points": 230
   },
   {
@@ -72,7 +74,7 @@
     "about": "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
     "linkedin": "https://www.linkedin.com/in/evanbrown",
     "currRoom": "Blueberry",
-    "match": "True",
+    "match": true,
     "points": 410
   }
 ]
