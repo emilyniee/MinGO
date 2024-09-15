@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 const MapPage = () => {
   const leaders = [
@@ -31,9 +32,12 @@ const MapPage = () => {
       <div className="w-1/4 bg-lightGreen p-4 rounded-lg self-center"> 
 
         {/* New Button */}
+        <Link href="/users">
         <button className="w-full p-2 bg-white border rounded mb-4 flex justify-between items-center">
           View Minglers! <img></img>
         </button>
+        </Link>
+    
 
         {/* Leaderboard */}
         <p> Enter a room and mingle to earn points! </p>
