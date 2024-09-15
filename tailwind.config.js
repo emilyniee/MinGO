@@ -12,7 +12,7 @@ module.exports = {
         foreground: "var(--foreground)",
         lightGreen: "#fff3d9",
         green: "#ffcc73",
-        orange:"#FCC179"
+        orange:"#528938"
       },
       keyframes: {
         glow: {
