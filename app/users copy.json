@@ -1,0 +1,58 @@
+[
+    {
+      "name": "Alice Johnson",
+      "pronouns": "she/her",
+      "dateMet": "09/08/2010",
+      "conversationHad": "Discussed career goals and shared thoughts on software development trends.",
+      "about": "Alice is a software engineer specializing in frontend technologies. She's passionate about UI/UX design and accessibility.",
+      "linkedin": "https://www.linkedin.com/in/alicejohnson", 
+      "currRoom": "Strawberry",
+      "match": "N/A" ,
+      "points": 10
+    },
+    {
+      "name": "Bob Smith",
+      "pronouns": "he/him",
+      "dateMet": "05/14/2015",
+      "conversationHad": "Talked about DevOps practices and automation in cloud environments.",
+      "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
+      "linkedin": "https://www.linkedin.com/in/bobsmith",
+      "currRoom": "Strawberry",
+      "match": "False", 
+      "points": 150
+    },
+    {
+      "name": "Charlie Lee",
+      "pronouns": "they/them",
+      "dateMet": "03/22/2018",
+      "conversationHad": "Explored ideas on data science and its applications in business analytics.",
+      "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
+      "linkedin": "https://www.linkedin.com/in/charlielee",
+      "currRoom": "Kiwi",
+      "match": "False",
+      "points": 450
+    },
+    {
+      "name": "Dana Williams",
+      "pronouns": "she/her",
+      "dateMet": "12/11/2020",
+      "conversationHad": "Chatted about the importance of cybersecurity in modern applications.",
+      "about": "Dana is a cybersecurity expert focused on building secure applications and ensuring data protection for organizations.",
+      "linkedin": "https://www.linkedin.com/in/danawilliams",
+      "currRoom": "Blueberry",
+      "match": "True", 
+      "points": 230
+    },
+    {
+      "name": "Evan Brown",
+      "pronouns": "he/him",
+      "dateMet": "07/06/2021",
+      "conversationHad": "Spoke about entrepreneurship and how to scale startups in the tech industry.",
+      "about": "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
+      "linkedin": "https://www.linkedin.com/in/evanbrown",
+      "currRoom": "Blueberry",
+      "match": "True", 
+      "points": 310
+    }
+  ]
+  
