@@ -31,25 +31,36 @@ export default function EventsPage() {
         <div className="grid gap-4">
           {events.map((event, index) => (
             <Card key={index} sx={{ maxWidth: 1200, maxHeight: 200, borderRadius: 2 }}>
-              <CardMedia
-                component="img"
-                height="20"
-                image={event.logo}
-                alt={event.title}
-              />
-              <CardContent>
-                <Typography variant="h6">{event.title}</Typography>
-                <Chip label={event.company} color="primary" />
-                <Typography variant="body2" color="text.secondary">
-                  Date: {event.date}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  Location: {event.location}
-                </Typography>
-                <Typography variant="body2" color="text.secondary" paragraph>
-                  {event.description}
-                </Typography>
-              </CardContent>
+              <div class="grid grid-cols-6 gap-4">
+                <div class="col-span-1">
+                  <CardMedia
+                    component="img"
+                    sx={{ height: 200, width: 200, objectFit: "contain" }}
+                    image={event.logo}
+                    alt={event.title}
+                  />
+                </div>
+                <div className="col-span-5 flex items-center ">
+                  <div className="flex items-center">
+                  <CardContent className='h-fill'>
+                    <Typography variant="h6">{event.title}</Typography>
+                    <Chip label={event.company} color="primary" />
+                    <Typography variant="body2" color="text.secondary">
+                      Date: {event.date}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Location: {event.location}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {event.description}
+                    </Typography>
+                  </CardContent>
+                  </div>
+                </div>
+              </div>
+
+
+              
             </Card>
           ))}
         </div>
