@@ -17,7 +17,8 @@
       "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
       "linkedin": "https://www.linkedin.com/in/bobsmith",
       "currRoom": "Strawberry",
-      "match": "False"
+      "match": "False", 
+      "points": 150
     },
     {
       "name": "Charlie Lee",
@@ -27,7 +28,8 @@
       "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
       "linkedin": "https://www.linkedin.com/in/charlielee",
       "currRoom": "Kiwi",
-      "match": "False"
+      "match": "False",
+      "points": 450
     },
     {
       "name": "Dana Williams",
@@ -37,7 +39,8 @@
       "about": "Dana is a cybersecurity expert focused on building secure applications and ensuring data protection for organizations.",
       "linkedin": "https://www.linkedin.com/in/danawilliams",
       "currRoom": "Blueberry",
-      "match": "True"
+      "match": "True", 
+      "points": 230
     },
     {
       "name": "Evan Brown",
@@ -47,7 +50,8 @@
       "about": "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
       "linkedin": "https://www.linkedin.com/in/evanbrown",
       "currRoom": "Blueberry",
-      "match": "True"
+      "match": "True", 
+      "points": 310
     }
   ]
   
