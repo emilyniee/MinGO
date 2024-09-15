@@ -10,7 +10,7 @@
     "linkedin": "N/A",
     "currRoom": "Strawberry",
     "match": "N/A"
-  },  
+  },
   {
     "name": "Alice Johnson",
     "pronouns": "she/her",
@@ -27,14 +27,14 @@
     "name": "Bob Smith",
     "pronouns": "he/him",
     "dateMet": "05/14/2015",
-    "talkedTo": false,
+    "talkedTo": true,
     "profilePic": "https://static.vecteezy.com/system/resources/previews/009/749/645/non_2x/teacher-avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
-    "conversationHad": "You engaged in small talk with Bob Smith, mainly discussing the current weather and the local baseball team's victory in their recent game. ",
+    "conversationHad": "You chatted with Bob Smith briefly about his plans for the weekend and that he likes to hike. It is challenging to enjoy weekends as he does not have much time off from his busy job. \n\nLet me know if you would like me to help you with anything else! ",
     "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
     "linkedin": "https://www.linkedin.com/in/bobsmith",
     "currRoom": "Strawberry",
     "match": "False",
-    "points": 150
+    "points": 200
   },
   {
     "name": "Charlie Lee",
