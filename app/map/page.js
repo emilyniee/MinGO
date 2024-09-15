@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 const MapPage = () => {
   const leaders = [
@@ -24,16 +25,19 @@ const MapPage = () => {
 
   return (
     <div
-      className="flex items-start justify-between min-h-screen bg-green-200 p-8"
+      className="flex items-start justify-between min-h-screen bg-green p-8"
       style={{ height: "100vh" }}
     >
       {/* Left Section: Dropdown for rooms and additional features */}
-      <div className="w-1/4 bg-green-100 p-4 rounded-lg self-center"> 
+      <div className="w-1/4 bg-lightGreen p-4 rounded-lg self-center"> 
 
         {/* New Button */}
+        <Link href="/users">
         <button className="w-full p-2 bg-white border rounded mb-4 flex justify-between items-center">
           View Minglers! <img></img>
         </button>
+        </Link>
+    
 
         {/* Leaderboard */}
         <p> Enter a room and mingle to earn points! </p>
@@ -60,8 +64,8 @@ const MapPage = () => {
           name="Mappedin Map"
           allow="clipboard-write; web-share"
           scrolling="yes"
-          width="100%"
-          height="650"
+          width="95%"
+          height="500"
           frameBorder="0"
           style={{ borderRadius: "12px", border: "0" }}
         ></iframe>

@@ -11,7 +11,7 @@ const MicButton = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-row items-center justify-center">
       <MicIcon
         onClick={handleClick}
         className="text-black"

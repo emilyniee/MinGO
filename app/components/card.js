@@ -1,36 +1,32 @@
 import pfp from "../images/anon.jpg"
 import blankPfp from "../images/blank.jpg"
 import Image from "next/image";
-import MicIcon from '@mui/icons-material/Mic';
+import MicButton from "./MicButton";
 
-export function Users({ profilePic, initials }) {
+export function Users({ profilePic, name }) {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="relative left-[82px] top-[139px] w-[343px] h-[159px] bg-[#E5FBEA] rounded-lg opacity-100">
-        <div className="absolute top-[30px] left-[30px] flex items-center">
-          <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex items-center justify-center">
-            {profilePic ? (
-              <Image
-              src={pfp}
-              alt="Profile"
-              className="w-full h-full object-cover"
-              width="100"
-              height="100"
-            />
-            ) : (
-              <Image
-                src={blankPfp}
-                alt="Profile"
-                className="w-full h-full object-cover"
-                width="100"
-                height="100"
-              />
-            )}
-          </div>
-          <span className="ml-6 text-5xl font-bold text-black">{initials}</span>
-          {/* <MicIcon className="ml-6 text-5xl font-bold text-black"/> */}
-          <MicButton className="text-black"/>
+    <div className="grid grid-rows-2 grid-cols-4 gap-6 bg-lightGreen rounded-lg items-center p-4">
+      {/* Profile Image */}
+      <div className="row-span-2 col-span-2 flex justify-center items-center">
+        <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex items-center justify-center">
+          <Image
+            src={profilePic}
+            alt="Profile"
+            className="w-full h-full object-cover"
+            width="100"
+            height="100"
+          />
         </div>
+      </div>
+
+      {/* Initials */}
+      <div className="col-span-2 row-span-1 flex items-center bg-green rounded-lg justify-center">
+        <h1 className="text-xl font-bold text-black">{name}</h1>
+      </div>
+
+      {/* Mic Icon */}
+      <div className="col-span-2 row-span-1 flex  ">
+        <MicButton fontSize="large" className="text-black" />
       </div>
     </div>
   );
