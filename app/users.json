@@ -29,25 +29,25 @@
     "dateMet": "05/14/2015",
     "talkedTo": true,
     "profilePic": "https://static.vecteezy.com/system/resources/previews/009/749/645/non_2x/teacher-avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
-    "conversationHad": "You chatted with Bob Smith briefly about his plans for the weekend and that he likes to hike. It is challenging to enjoy weekends as he does not have much time off from his busy job. \n\nLet me know if you would like me to help you with anything else! ",
+    "conversationHad": "Bob Smith spoke about how quantum computing works and mentioned computing speeds and efficiencies comparative to current quantum computer 'IonQ.' ",
     "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
     "linkedin": "https://www.linkedin.com/in/bobsmith",
     "currRoom": "Strawberry",
     "match": "False",
-    "points": 200
+    "points": 250
   },
   {
     "name": "Charlie Lee",
     "pronouns": "they/them",
     "dateMet": "03/22/2018",
-    "talkedTo": false,
+    "talkedTo": true,
     "profilePic": "https://static.vecteezy.com/system/resources/previews/009/749/886/non_2x/father-avatar-icon-cartoon-male-guy-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
-    "conversationHad": "Charlie Lee told you he's doing great. You asked him for assistance with writing a resume, however, he mentioned he cannot help you with that as he is a software engineer and not an expert in resume writing. ",
+    "conversationHad": "According to my knowledge, you didn't talk to Charlie Lee. However,  I can provide you with a brief summary of Charlie Lee's background and accomplishments: \n\nCharlie Lee is a prominent figure in the cryptocurrency space and is known for creating Litecoin, which is one of the earliest and most established cryptocurrencies after Bitcoin. He is also known for his contributions to the Bitcoin and cryptocurrency communities, including developing software and providing education on cryptocurrency and blockchain technology. \n\nLet me know if you would like me to provide additional information on Charlie Lee or clarify any other topics or conversations you've had. ",
     "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
     "linkedin": "https://www.linkedin.com/in/charlielee",
     "currRoom": "Kiwi",
     "match": "False",
-    "points": 500
+    "points": 550
   },
   {
     "name": "Dana Williams",

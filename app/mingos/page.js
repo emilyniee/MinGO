@@ -32,7 +32,7 @@ export default function MingosPg() {
   console.log(filteredUsers);
 
   return (
-    <div className="grid grid-cols-4 gap-4 h-screen bg-green p-8 pt-20">
+    <div className="grid grid-cols-4 gap-4 h-screen bg-green p-8 pt-20 ">
       {filteredUsers.length > 0 ? (
         filteredUsers.map((user, index) => (
           <UserMingo
