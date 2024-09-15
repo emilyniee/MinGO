@@ -1,57 +1,78 @@
 [
-    {
-      "name": "Alice Johnson",
-      "pronouns": "she/her",
-      "dateMet": "09/08/2010",
-      "conversationHad": "Discussed career goals and shared thoughts on software development trends.",
-      "about": "Alice is a software engineer specializing in frontend technologies. She's passionate about UI/UX design and accessibility.",
-      "linkedin": "https://www.linkedin.com/in/alicejohnson", 
-      "currRoom": "Strawberry",
-      "match": "N/A" 
-    },
-    {
-      "name": "Bob Smith",
-      "pronouns": "he/him",
-      "dateMet": "05/14/2015",
-      "conversationHad": "Talked about DevOps practices and automation in cloud environments.",
-      "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
-      "linkedin": "https://www.linkedin.com/in/bobsmith",
-      "currRoom": "Strawberry",
-      "match": "False", 
-      "points": 150
-    },
-    {
-      "name": "Charlie Lee",
-      "pronouns": "they/them",
-      "dateMet": "03/22/2018",
-      "conversationHad": "Explored ideas on data science and its applications in business analytics.",
-      "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
-      "linkedin": "https://www.linkedin.com/in/charlielee",
-      "currRoom": "Kiwi",
-      "match": "False",
-      "points": 450
-    },
-    {
-      "name": "Dana Williams",
-      "pronouns": "she/her",
-      "dateMet": "12/11/2020",
-      "conversationHad": "Chatted about the importance of cybersecurity in modern applications.",
-      "about": "Dana is a cybersecurity expert focused on building secure applications and ensuring data protection for organizations.",
-      "linkedin": "https://www.linkedin.com/in/danawilliams",
-      "currRoom": "Blueberry",
-      "match": "True", 
-      "points": 230
-    },
-    {
-      "name": "Evan Brown",
-      "pronouns": "he/him",
-      "dateMet": "07/06/2021",
-      "conversationHad": "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-      "about": "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-      "linkedin": "https://www.linkedin.com/in/evanbrown",
-      "currRoom": "Blueberry",
-      "match": "True", 
-      "points": 310
-    }
-  ]
-  
+  {
+    "name": "You",
+    "pronouns": "N/A",
+    "dateMet": "N/A",
+    "talkedTo": false,
+    "profilePic:": "https://static.vecteezy.com/system/resources/previews/020/389/525/original/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg",
+    "conversationHad": "",
+    "about": "",
+    "linkedin": "N/A",
+    "currRoom": "Strawberry",
+    "match": "N/A"
+  },  
+  {
+    "name": "Alice Johnson",
+    "pronouns": "she/her",
+    "dateMet": "09/08/2010",
+    "talkedTo": false,
+    "profilePic:": "https://static.vecteezy.com/system/resources/previews/020/389/525/original/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg",
+    "conversationHad": "You and Alice Johnson discussed the reason why she is attending a career fair and she informed you she is looking for a job for winter 2025. She also provides you with a website where you can find her postings. ",
+    "about": "Alice is a software engineer specializing in frontend technologies. She's passionate about UI/UX design and accessibility.",
+    "linkedin": "https://www.linkedin.com/in/alicejohnson",
+    "currRoom": "Strawberry",
+    "match": "N/A"
+  },
+  {
+    "name": "Bob Smith",
+    "pronouns": "he/him",
+    "dateMet": "05/14/2015",
+    "talkedTo": false,
+    "profilePic": "https://static.vecteezy.com/system/resources/previews/009/749/645/non_2x/teacher-avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
+    "conversationHad": "You engaged in small talk with Bob Smith, mainly discussing the current weather and the local baseball team's victory in their recent game. ",
+    "about": "Bob is a DevOps engineer with a deep knowledge of cloud infrastructure and continuous integration pipelines.",
+    "linkedin": "https://www.linkedin.com/in/bobsmith",
+    "currRoom": "Strawberry",
+    "match": "False",
+    "points": 150
+  },
+  {
+    "name": "Charlie Lee",
+    "pronouns": "they/them",
+    "dateMet": "03/22/2018",
+    "talkedTo": false,
+    "profilePic": "https://static.vecteezy.com/system/resources/previews/009/749/886/non_2x/father-avatar-icon-cartoon-male-guy-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
+    "conversationHad": "Charlie Lee told you he's doing great. You asked him for assistance with writing a resume, however, he mentioned he cannot help you with that as he is a software engineer and not an expert in resume writing. ",
+    "about": "Charlie is a data scientist with experience in machine learning and statistical analysis. They love working with big data and AI solutions.",
+    "linkedin": "https://www.linkedin.com/in/charlielee",
+    "currRoom": "Kiwi",
+    "match": "False",
+    "points": 500
+  },
+  {
+    "name": "Dana Williams",
+    "pronouns": "she/her",
+    "dateMet": "12/11/2020",
+    "talkedTo": false,
+    "profilePic": "https://static.vecteezy.com/system/resources/previews/004/439/691/non_2x/avatar-doodle-profile-girl-character-vector.jpg",
+    "conversationHad": "Chatted about the importance of cybersecurity in modern applications.",
+    "about": "Dana is a cybersecurity expert focused on building secure applications and ensuring data protection for organizations.",
+    "linkedin": "https://www.linkedin.com/in/danawilliams",
+    "currRoom": "Blueberry",
+    "match": "True",
+    "points": 230
+  },
+  {
+    "name": "Evan Brown",
+    "pronouns": "he/him",
+    "dateMet": "07/06/2021",
+    "talkedTo": true,
+    "profilePic": "https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
+    "conversationHad": "You chatted with a person named Evan who is not a student. ",
+    "about": "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
+    "linkedin": "https://www.linkedin.com/in/evanbrown",
+    "currRoom": "Blueberry",
+    "match": "True",
+    "points": 360
+  }
+]

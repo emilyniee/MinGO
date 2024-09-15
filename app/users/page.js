@@ -1,3 +1,6 @@
+"use client";
+
+import React, { useState, useEffect, useRef } from 'react';
 import {Users, UserMingo} from "../components/card";
 
 const minglers = [
@@ -77,33 +80,56 @@ const minglers = [
     linkedin: "https://www.linkedin.com/in/evanbrown",
     currentRoom: "Apple",
     topMatch: false
-  },
-  {
-    name: "Evan Brown",
-    pronouns: "he/him",
-    profilePic:"https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
-    dateMet: "07/06/2021",
-    conversationHad: "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-    about: "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-    linkedin: "https://www.linkedin.com/in/evanbrown",
-    currentRoom: "Apple",
-    topMatch: false
-  },
-  {
-    name: "Evan Brown",
-    pronouns: "he/him",
-    profilePic:"https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
-    dateMet: "07/06/2021",
-    conversationHad: "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-    about: "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-    linkedin: "https://www.linkedin.com/in/evanbrown",
-    currentRoom: "Apple",
-    topMatch: false
   }
 ];
 
 
 export default function UserPg() {
+  const [isListening, setIsListening] = useState(false);
+  const [transcript, setTranscript] = useState('');
+  const toggleButtonRef = useRef(null); // Ref for the button element
+  const textDisplayRef = useRef(null); // Ref for the text display element
+  const recognitionRef = useRef(null); // Ref for the speech recognition instance
+
+  useEffect(() => {
+    if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+      recognitionRef.current = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+      recognitionRef.current.continuous = true;
+      recognitionRef.current.interimResults = false;
+      recognitionRef.current.lang = 'en-US';
+
+      recognitionRef.current.onresult = (event) => {
+        const transcript = event.results[event.resultIndex][0].transcript;
+        setTranscript((prev) => prev + transcript + ' '); // Update the transcript state
+      };
+
+      recognitionRef.current.onstart = () => {
+        toggleButtonRef.current.textContent = 'Stop Listening';
+        toggleButtonRef.current.classList.add('stop');
+      };
+
+      recognitionRef.current.onend = () => {
+        toggleButtonRef.current.textContent = 'Start Listening';
+        toggleButtonRef.current.classList.remove('stop');
+        if (isListening) {
+          recognitionRef.current.start(); // Restart if still listening
+        }
+      };
+    } else {
+      alert('Speech recognition is not supported in this browser. Please try Chrome or another supported browser.');
+    }
+  }, [isListening]);
+
+  const toggleListening = () => {
+    if (isListening) {
+      recognitionRef.current.stop();
+      setIsListening(false);
+    } else {
+      recognitionRef.current.start();
+      setIsListening(true);
+    }
+  };
+
   return (
     <div className="h-screen pt-20 bg-green p-8">
       <h1 className="text-white text-xl">TOP MATCHES</h1>
