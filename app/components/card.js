@@ -1,7 +1,7 @@
 import pfp from "../images/anon.jpg"
 import blankPfp from "../images/blank.jpg"
 import Image from "next/image";
-import MicIcon from '@mui/icons-material/Mic';
+import MicButton from "./MicButton";
 
 export function Users({ profilePic, name }) {
   return (
@@ -24,9 +24,9 @@ export function Users({ profilePic, name }) {
         <h1 className="text-xl font-bold text-black">{name}</h1>
       </div>
 
-      {/* Mic Icon */}
+      {/* Mic Button */}
       <div className="col-span-2 row-span-1 flex  ">
-        <MicIcon fontSize="large" className="text-black" />
+        <MicButton fontSize="large" className="text-black" />
       </div>
     </div>
   );
