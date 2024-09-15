@@ -67,39 +67,6 @@ const minglers = [
     currentRoom: "Apple",
     topMatch: false
   },
-  {
-    name: "Evan Brown",
-    pronouns: "he/him",
-    profilePic:"https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
-    dateMet: "07/06/2021",
-    conversationHad: "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-    about: "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-    linkedin: "https://www.linkedin.com/in/evanbrown",
-    currentRoom: "Apple",
-    topMatch: false
-  },
-  {
-    name: "Evan Brown",
-    pronouns: "he/him",
-    profilePic:"https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
-    dateMet: "07/06/2021",
-    conversationHad: "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-    about: "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-    linkedin: "https://www.linkedin.com/in/evanbrown",
-    currentRoom: "Apple",
-    topMatch: false
-  },
-  {
-    name: "Evan Brown",
-    pronouns: "he/him",
-    profilePic:"https://static.vecteezy.com/system/resources/previews/043/050/361/non_2x/man-with-glasses-cartoon-style-profile-avatar-picture-vector.jpg",
-    dateMet: "07/06/2021",
-    conversationHad: "Spoke about entrepreneurship and how to scale startups in the tech industry.",
-    about: "Evan is an entrepreneur and startup founder with a background in mobile app development. He's passionate about innovation and growth.",
-    linkedin: "https://www.linkedin.com/in/evanbrown",
-    currentRoom: "Apple",
-    topMatch: false
-  }
 ];
 
 

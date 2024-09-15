@@ -26,7 +26,7 @@ export function Users({ profilePic, name }) {
 
       {/* Mic Button */}
       <div className="col-span-2 row-span-1 flex  ">
-        <MicButton fontSize="large" className="text-black" />
+        <MicButton fontSize="large" className="text-black" name={name}/>
       </div>
     </div>
   );

@@ -1,13 +1,17 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from 'next/link';
 
 const MapPage = () => {
+  const [room, setRoom] = useState("");  // State to handle the input value
+
   const leaders = [
-    { name: "Michelle", points: "500" },
-    { name: "eteirj", points: "450" },
-    { name: "Annrtea", points: "400" },
-    { name: "eritj", points: "350" },
-    { name: "wpoetk", points: "300" }
+    { name: "Bob Smith", points: "500" },
+    { name: "Charlie Lee", points: "450" },
+    { name: "Dana Williams", points: "400" },
+    { name: "Evan Brown", points: "350" },
+    { name: "Alice Johnson", points: "300" }
   ];
 
   const getMedalEmoji = (index) => {
@@ -23,6 +27,15 @@ const MapPage = () => {
     }
   };
 
+  const handleRoomChange = (e) => {
+    setRoom(e.target.value); // Update room state
+  };
+
+  const handleRoomSubmit = () => {
+    // Perform any action with the room entered, e.g., navigating to a room
+    console.log(`Entered room: ${room}`);
+  };
+
   return (
     <div
       className="flex items-start justify-between min-h-screen bg-green p-8"
@@ -31,14 +44,32 @@ const MapPage = () => {
       {/* Left Section: Dropdown for rooms and additional features */}
       <div className="w-1/4 bg-lightGreen p-4 rounded-lg self-center"> 
 
-        {/* New Button */}
+        {/* Enter Room Input */}
+        <div className="mb-4">
+          <input
+            type="text"
+            value={room}
+            onChange={handleRoomChange}
+            placeholder="Enter room"
+            className="w-full p-2 bg-lightestGreen border-b-2 border-black rounded text-center mb-2"
+            style={{ outline: 'none' }}
+          />
+          <Link href="/users">
+          <button 
+            onClick={handleRoomSubmit}
+            className="w-full p-2 bg-blue-500 text-white rounded shadow-sm hover:bg-blue-600 transition duration-150">
+            Enter Room
+          </button>
+          </Link>
+        </div>
+
+        {/* View Minglers Button */}
         <Link href="/users">
-        <button className="w-full p-2 bg-white border rounded mb-4 flex justify-between items-center">
-          View Minglers! <img></img>
-        </button>
+          <button className="w-full p-2 bg-white border rounded mb-4 flex justify-between items-center">
+            View Minglers! <img></img>
+          </button>
         </Link>
     
-
         {/* Leaderboard */}
         <p> Enter a room and mingle to earn points! </p>
         <h2 className="text-lg font-bold mb-2">Leaderboard:</h2>
