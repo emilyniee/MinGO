@@ -1,5 +1,5 @@
-import pfp from "../images/anon.jpg"
-import blankPfp from "../images/blank.jpg"
+import pfp from "../images/anon.jpg";
+import blankPfp from "../images/blank.jpg";
 import Image from "next/image";
 import MicButton from "./MicButton";
 
@@ -19,14 +19,14 @@ export function Users({ profilePic, name }) {
         </div>
       </div>
 
-      {/* Initials */}
+      {/* Name */}
       <div className="col-span-2 row-span-1 flex items-center bg-green rounded-lg justify-center">
         <h1 className="text-xl font-bold text-black">{name}</h1>
       </div>
 
       {/* Mic Button */}
-      <div className="col-span-2 row-span-1 flex  ">
-        <MicButton fontSize="large" className="text-black" name={name}/>
+      <div className="col-span-2 row-span-1 flex">
+        <MicButton fontSize="large" className="text-black" name={name} />
       </div>
     </div>
   );
@@ -34,8 +34,9 @@ export function Users({ profilePic, name }) {
 
 export function UserMingo({ profilePic, name, paragraphText, date }) {
   return (
-    <div class="grid grid-cols-3 gap-4 bg-lightGreen p-4 items-center">
-      <div class="...">
+    <div className="grid grid-cols-3 gap-4 bg-lightGreen p-4 items-center h-96 overflow-y-scroll">
+      {/* Profile Image */}
+      <div>
         <Image
           src={profilePic}
           alt="Profile"
@@ -45,25 +46,26 @@ export function UserMingo({ profilePic, name, paragraphText, date }) {
         />
       </div>
 
-      <div class="...">
+      {/* Name and Date */}
+      <div>
         <h1 className="text-xl font-bold text-black">{name}</h1>
         <h1 className="text-xl font-bold text-black">{date}</h1>
       </div>
 
-      <div class="col-span-3 ...">
+      {/* About Section */}
+      <div className="col-span-3">
         <h1 className="text-black font-bold">About:</h1>
         <h4 className="text-black">{paragraphText}</h4>
       </div>
-     
     </div>
   );
 }
 
 export function EventCard({ companyLogo, companyName, date, time, location }) {
   return (
-    <Card sx={{ maxWidth: 345, mb: 2 }}>
+    <Card sx={{ maxWidth: 345, mb: 2, height: 300, overflowY: 'auto' }}>
       <CardContent>
-      <Image
+        <Image
           src={companyLogo}
           alt="Company Logo"
           className=""
@@ -73,7 +75,7 @@ export function EventCard({ companyLogo, companyName, date, time, location }) {
         <Typography variant="h5" component="div" sx={{ mt: 2 }}>
           {companyName}
         </Typography>
-        <Chip label={company} sx={{ mt: 1, mb: 1 }} />
+        <Chip label={companyName} sx={{ mt: 1, mb: 1 }} />
         <Typography variant="body2" color="text.secondary">
           {location}
         </Typography>

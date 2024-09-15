@@ -38,7 +38,7 @@ const MapPage = () => {
 
   return (
     <div
-      className="flex items-start justify-between min-h-screen bg-green p-8"
+      className="flex items-start justify-between min-h-screen bg-green p-8 text-black"
       style={{ height: "100vh" }}
     >
       {/* Left Section: Dropdown for rooms and additional features */}
@@ -88,7 +88,7 @@ const MapPage = () => {
       </div>
 
       {/* Right Section: Mappedin iframe */}
-      <div className="w-3/4 p-4">
+      <div className="w-3/4 p-4 pt-12">
         <iframe
           src="https://app.mappedin.com/map/66e5a1d7af770b000b908059?embedded=true"
           title="Mappedin Map"
