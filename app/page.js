@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import pfp from '../app/images/pfp.jpeg';
 import Navbar from './components/navbar.js';
-import MicButton from './components/micButton';
 
 export default function Home() {
   return (

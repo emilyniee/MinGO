@@ -4,8 +4,9 @@ const FILLERTEXT = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 
 export default function MingosPg() {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <UserMingo profilePic="./images/anon.jpg" initials="AB" paragraphText={FILLERTEXT} date="06/17/2024"/>
+    <div className="grid grid-cols-4 gap-4 h-screen bg-green p-8 pt-20">
+      <UserMingo 
+        name="suzy" profilePic="https://static.vecteezy.com/system/resources/previews/020/389/525/original/hand-drawing-cartoon-girl-cute-girl-drawing-for-profile-picture-vector.jpg" initials="AB" paragraphText={FILLERTEXT} date="06/17/2024"/>
     </div>
   );
 }

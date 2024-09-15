@@ -32,39 +32,30 @@ export function Users({ profilePic, name }) {
   );
 }
 
-export function UserMingo({ profilePic, initials, paragraphText, date }) {
+export function UserMingo({ profilePic, name, paragraphText, date }) {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="relative left-[82px] top-[139px] w-[448px] bg-[#E5FBEA] rounded-lg opacity-100">
-        <div className="absolute top-[30px] left-[30px] flex flex-row items-center">
-          <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex items-center justify-center">
-            {profilePic ? (
-              <Image
-                src={pfp}
-                alt="Profile"
-                className="w-full h-full object-cover"
-                width="100"
-                height="100"
-              />
-            ) : (
-              <Image
-                src={blankPfp}
-                alt="Profile"
-                className="w-full h-full object-cover"
-                width="100"
-                height="100"
-              />
-            )}
-          </div>
-          <div className="relative left-[25px] ml-6 flex flex-col justify-between h-[90px]">
-            <span className="text-6xl font-bold text-black">{initials}</span>
-            <span className="text-xl font-bold text-black">"06/17/56</span>
-          </div>
-        </div>
-        <div className="pt-[140px] pb-[140px] px-[30px] overflow-y-scroll">
-          <p className="text-base text-black">{paragraphText}</p>
-        </div>
+    <div class="grid grid-cols-3 gap-4 bg-lightGreen p-4 items-center">
+      <div class="...">
+        <Image
+          src={profilePic}
+          alt="Profile"
+          className="w-full h-full object-cover"
+          width="100"
+          height="100"
+        />
       </div>
+
+      <div class="...">
+        <h1 className="text-xl font-bold text-black">{name}</h1>
+        <h1 className="text-xl font-bold text-black">{date}</h1>
+      </div>
+
+
+      <div class="col-span-3 ...">
+        <h1 className="text-black font-bold">About:</h1>
+        <h4 className="text-black">{paragraphText}</h4>
+      </div>
+     
     </div>
   );
 }
